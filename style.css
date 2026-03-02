@@ -1,0 +1,213 @@
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #eef2f7;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(135deg, #0066cc 0%, #0055aa 100%);
+    color: white;
+    padding: 40px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+header .subtitle {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+header p {
+    font-size: 0.95em;
+    opacity: 0.9;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: border-color 0.3s ease;
+}
+
+header a:hover {
+    border-bottom-color: white;
+}
+
+/* ===== Main Area ===== */
+main {
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
+    margin-bottom: 40px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+section h2 {
+    font-size: 1.6em;
+    color: #0066cc;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ccc;
+}
+
+.item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.item h3 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.item .org {
+    color: #0055aa;
+    font-weight: 500;
+}
+
+.item .date {
+    display: block;
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.item ul {
+    margin-left: 20px;
+    color: #555;
+}
+
+.item li {
+    margin-bottom: 8px;
+}
+
+.item p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.item a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    border: 1px solid #0066cc;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.item a:hover {
+    background: #0066cc;
+    color: #fff;
+}
+
+/* ===== Skills ===== */
+.skills-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.skills-list li {
+    background: #f7faff;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border-left: 4px solid #0066cc;
+    color: #444;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.skills-list li:hover {
+    background: #e6efff;
+    transform: translateX(4px);
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #0055aa;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    header .subtitle {
+        font-size: 1em;
+    }
+    section h2 {
+        font-size: 1.3em;
+    }
+    .item h3 {
+        font-size: 1em;
+    }
+    main {
+        padding: 25px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    header h1 {
+        font-size: 1.6em;
+    }
+    section h2 {
+        font-size: 1.1em;
+    }
+    header p {
+        font-size: 0.85em;
+    }
+}
